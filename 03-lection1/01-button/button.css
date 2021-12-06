@@ -1,4 +1,4 @@
-/*Обнуление*/
+/* Reset */
 *,
 *:before,
 *:after {
@@ -58,23 +58,19 @@ a:hover {
 	--primary: var(--blue);
 	--secondary: var(--purple);
 }
-/* Стилизация кнопки */
-.button {
-	width: 643px;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-evenly;
-	align-items: center;
+/* Button style */
+
+body {
 	text-align: center;
-	min-height: 100vh;
-	font-style: normal;
-	font-weight: 500;
+	padding-top: 100px;
+}
+button {
 	font-size: 16px;
 	line-height: 19px;
-	margin: 0 auto;
+	margin: 0 15px;
 }
-.button__primary {
-	flex: 0 0 33.3%;
+.button__primary,
+.button__primary-disabled {
 	color: #ffffff;
 	background: var(--primary);
 	border-radius: 8px;
@@ -85,8 +81,8 @@ a:hover {
 .button__primary:hover {
 	background: #2342c0;
 }
-.button__secondary {
-	flex: 0 0 33.3%;
+.button__secondary,
+.button__secondary-disabled {
 	color: #ffffff;
 	background: var(--secondary);
 	border-radius: 8px;
@@ -98,8 +94,8 @@ a:hover {
 	background: #5028c6;
 }
 
-.button__alternate {
-	flex: 0 0 33.3%;
+.button__alternate,
+.button__alternate-disabled {
 	color: var(--grey-4);
 	background: var(--white);
 	border: 1px solid var(--grey-3);
@@ -110,4 +106,10 @@ a:hover {
 }
 .button__alternate:hover {
 	border: 1px solid #212429;
+}
+.button__primary-disabled,
+.button__secondary-disabled,
+.button__alternate-disabled {
+	cursor: default;
+	opacity: 0.5;
 }
