@@ -1,0 +1,73 @@
+/* Reset */
+*,
+*:before,
+*:after {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+:focus,
+:active {
+	outline: none;
+}
+a:focus,
+a:active {
+	outline: none;
+}
+nav,
+footer,
+header,
+aside {
+	display: block;
+}
+html,
+body {
+	height: 100%;
+	font-weight: 500;
+	font-family: "Roboto", sans-serif;
+	background: #ffffff;
+}
+input,
+button,
+textarea {
+	font-family: inherit;
+}
+input::-ms-clear {
+	display: none;
+}
+button {
+	cursor: pointer;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+:root {
+	--white: #ffffff;
+	--black: #212429;
+	--purple: #7048e8;
+	--blue: #374fc7;
+	--grey-3: #acb5bd;
+	--grey-4: #495057;
+	--hoverprimary: #2342c0;
+	--hoversecondary: #5028c6;
+
+	--primary: var(--blue);
+	--secondary: var(--purple);
+}
+
+/* Button style */
+body {
+	text-align: center;
+	padding-top: 100px;
+}
+button {
+	font-size: 16px;
+	line-height: 19px;
+	margin: 0 15px;
+}
