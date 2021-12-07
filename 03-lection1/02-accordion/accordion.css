@@ -1,1 +1,46 @@
-/* Стилизация аккордеона */
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import "./reset.css";
+
+/* Accordion style */
+
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+.accordion__items {
+	width: 730px;
+}
+.accordion__item {
+	background: var(--white);
+	margin-bottom: 8px;
+	border: 1px solid #acb5bd;
+	border-radius: 8px;
+}
+.accordion__item:last-child {
+	margin-bottom: 0;
+}
+.accordion__item[open] .accordion__summary::after {
+	transform: rotate(-180deg);
+}
+.accordion__summary {
+	display: block;
+	color: var(--black);
+	cursor: pointer;
+	width: 100%;
+	position: relative;
+	padding: 24px 49px 24px 32px;
+}
+.accordion__summary::after {
+	content: url("./components/Vector1.svg");
+	position: absolute;
+	right: 32px;
+	transition: 0.3s all;
+}
+
+.accordion__text {
+	color: var(--grey-4);
+	margin: -8px 49px 24px 32px;
+}
