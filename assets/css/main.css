@@ -11,6 +11,7 @@
 	--grey-2: #dde2e5;
 	--grey-3: #acb5bd;
 	--grey-4: #495057;
+	--pagebackground: #f9fafc;
 
 	--error: var(--red);
 	--success: var(--blue);
@@ -19,4 +20,9 @@
 	--secondary: var(--purple);
 	--hoverprimary: #2342c0;
 	--hoversecondary: #5028c6;
+}
+
+.container {
+	max-width: 1110px;
+	margin: 0 auto;
 }
