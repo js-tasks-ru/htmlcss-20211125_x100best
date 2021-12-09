@@ -1,13 +1,6 @@
 /* Accordion style */
-.container {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
-	min-height: 100vh;
-}
 .accordion {
-	width: 730px;
+	width: 100%;
 }
 .accordion__item {
 	background: var(--white);
@@ -40,5 +33,5 @@
 
 .accordion__text {
 	color: var(--grey-4);
-	margin: -8px 49px 24px 32px;
+	padding: 0px 49px 24px 32px;
 }
