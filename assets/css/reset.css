@@ -40,8 +40,9 @@ a:visited {
 a:hover {
 	text-decoration: none;
 }
-
-/* Button style */
+summary::-webkit-details-marker {
+	display: none;
+}
 body {
 	margin: 0;
 	padding: 0;
