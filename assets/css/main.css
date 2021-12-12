@@ -11,7 +11,9 @@
 	--grey-2: #dde2e5;
 	--grey-3: #acb5bd;
 	--grey-4: #495057;
+	--grey-5: #90a0b7;
 	--pagebackground: #f9fafc;
+	--black-1: #334d6e;
 
 	--error: var(--red);
 	--success: var(--blue);
