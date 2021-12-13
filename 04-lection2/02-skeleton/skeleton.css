@@ -43,9 +43,9 @@
 	background: linear-gradient(
 		92.51deg,
 		var(--grey-2) 6.44%,
-		var(--grey-5) 38.47%,
-		var(--grey-6) 56.48%,
-		var(--grey-7) 77.5%,
+		var(--grey-6) 38.47%,
+		var(--grey-7) 56.48%,
+		var(--grey-8) 77.5%,
 		var(--grey-2) 102.52%
 	);
 }
