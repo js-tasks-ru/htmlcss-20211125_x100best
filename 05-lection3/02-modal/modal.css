@@ -1,22 +1,5 @@
-.modal__button {
-}
-.button {
-	font-size: 16px;
-	line-height: 19px;
-	border-radius: 8px;
-	padding: 15px 51px;
-	font-family: "Roboto", sans-serif;
-	transition: all 0.3s ease-in-out;
-	border: none;
-	cursor: pointer;
-}
-.button_primary {
-	color: var(--white);
-	background: var(--primary);
-}
-.button_primary:hover {
-	background: var(--hoverprimary);
-}
+@import "../../03-lection1/01-button/button.css";
+
 .modal {
 	background-color: rgba(196, 196, 196, 0.5);
 	position: fixed;
