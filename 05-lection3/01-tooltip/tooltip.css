@@ -20,6 +20,7 @@
 	transition: all 0.3s ease-in-out;
 	opacity: 0;
 	pointer-events: none;
+	clip: rect(0, 0, 0, 0);
 }
 
 .tooltip__bubble:before {
@@ -34,6 +35,7 @@
 .tooltip__icon:hover ~ .tooltip__bubble {
 	display: inline-block;
 	opacity: 1;
+	clip: auto;
 }
 .tooltip__text {
 	font-family: "Inter", sans-serif;
