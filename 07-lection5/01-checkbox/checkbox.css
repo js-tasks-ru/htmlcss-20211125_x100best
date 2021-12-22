@@ -1,7 +1,6 @@
 .ckeckbox {
 	display: inline-flex;
 	flex-direction: column;
-	margin-bottom: 15px;
 }
 .ckeckbox__input {
 	position: absolute;
@@ -12,6 +11,7 @@
 	display: flex;
 	align-items: center;
 	cursor: pointer;
+	margin-bottom: 15px;
 }
 .ckeckbox__control {
 	display: inline-flex;
@@ -28,6 +28,7 @@
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+	display: none;
 }
 .checkbox__label {
 	display: inline-flex;
@@ -44,15 +45,15 @@
 	background: var(--primary);
 	border-color: var(--primary);
 }
-
+.ckeckbox__input:checked ~ .ckeckbox__state .ckeckbox__control svg {
+	display: block;
+}
 .ckeckbox__input[disabled] ~ .ckeckbox__state {
 	cursor: default;
 	pointer-events: none;
 }
 .ckeckbox__input[disabled] ~ .ckeckbox__state .ckeckbox__control {
 	background: var(--grey-2);
-	position: inherit;
-	z-index: -1;
 }
 .ckeckbox__input[disabled] ~ .ckeckbox__state .checkbox__label {
 	color: var(--grey-2);
