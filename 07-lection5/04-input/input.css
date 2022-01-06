@@ -1,7 +1,6 @@
 .form-group {
 	display: flex;
 	flex-direction: column;
-	margin-bottom: 16px;
 }
 .form-group__label {
 	display: inline-flex;
@@ -17,6 +16,7 @@
 .form-group__control {
 	position: relative;
 	display: inline-flex;
+	margin-bottom: 16px;
 }
 .form-group__input {
 	padding: 17px 20px 13px 24px;
