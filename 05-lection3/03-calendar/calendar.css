@@ -54,3 +54,8 @@
 	color: var(--white);
 	background: var(--primary);
 }
+
+.calendar_mini {
+	transform: scale(0.8);
+	padding: 20px 30px 23px 30px;
+}

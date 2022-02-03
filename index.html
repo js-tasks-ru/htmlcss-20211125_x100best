@@ -15,6 +15,8 @@
 	<link rel="stylesheet" href="./05-lection3/02-modal/modal.css">
 	<link rel="stylesheet" href="./05-lection3/03-calendar/calendar.css">
 	<link rel="stylesheet" href="./06-lection4/01-avatar/avatar.css">
+	<link rel="stylesheet" href="./07-lection5/01-checkbox/checkbox.css">
+	<link rel="stylesheet" href="./07-lection5/02-radio/radio.css">
 </head>
 
 <body>
@@ -27,9 +29,9 @@
 		<main class="preview  preview__tabs">
 			<div class="container">
 				<div class="preview__grid">
-					<a href="./05-lection3/01-tooltip/index.html" class="card preview__card">
+					<a href="./05-lection3/01-tooltip/index.html" class="card">
 						<div class="card__body">
-							<div class="tooltip">
+							<div class="tooltip tooltip_preview">
 								<div class="tooltip__icon">
 									<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
 										xmlns="http://www.w3.org/2000/svg">
@@ -51,13 +53,73 @@
 						</div>
 						<div class="card__title">Tooltip</div>
 					</a>
-					<a href="" class="card preview__card">
-						<div class="card__body"></div>
+					<a href="./07-lection5/04-input/index.html" class="card">
+						<div class="card__body">
+							<div class="card__body_forms">
+								<label class="ckeckbox">
+									<input type="checkbox" class="ckeckbox__input">
+									<span class="ckeckbox__state">
+										<span class="ckeckbox__control">
+											<svg class="checkbox__icon" width="15" height="13" viewBox="0 0 15 13" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path d="M1.5 7.5L5 11L13 2" stroke="white" stroke-width="3" stroke-linecap="round"
+													stroke-linejoin="round" />
+											</svg>
+										</span>
+										<span class="checkbox__label">Default</span>
+									</span>
+								</label>
+								<label class="ckeckbox">
+									<input type="checkbox" class="ckeckbox__input" checked>
+									<span class="ckeckbox__state">
+										<span class="ckeckbox__control">
+											<svg class="checkbox__icon" width="15" height="13" viewBox="0 0 15 13" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path d="M1.5 7.5L5 11L13 2" stroke="white" stroke-width="3" stroke-linecap="round"
+													stroke-linejoin="round" />
+											</svg>
+										</span>
+										<span class="checkbox__label">Checked</span>
+									</span>
+								</label>
+								<label class="ckeckbox">
+									<input type="checkbox" class="ckeckbox__input" disabled>
+									<span class="ckeckbox__state">
+										<span class="ckeckbox__control">
+											<svg class="checkbox__icon" width="15" height="13" viewBox="0 0 15 13" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path d="M1.5 7.5L5 11L13 2" stroke="white" stroke-width="3" stroke-linecap="round"
+													stroke-linejoin="round" />
+											</svg>
+										</span>
+										<span class="checkbox__label">Disabled</span>
+									</span>
+								</label>
+								<label class="radio">
+									<input type="radio" class="radio__input" value="1" name="nameradio">
+									<span class="radio__state">
+										<span class="radio__label">Default</span>
+									</span>
+								</label>
+								<label class="radio">
+									<input type="radio" class="radio__input" value="2" name="nameradio" checked>
+									<span class="radio__state">
+										<span class="radio__label">Selected</span>
+									</span>
+								</label>
+								<label class="radio">
+									<input type="radio" class="radio__input" value="3" name="nameradio" disabled>
+									<span class="radio__state">
+										<span class="radio__label">Disabled</span>
+									</span>
+								</label>
+							</div>
+						</div>
 						<div class="card__title">Custom form elements</div>
 					</a>
-					<a href="./05-lection3/03-calendar/index.html" class="card preview__card">
+					<a href="./05-lection3/03-calendar/index.html" class="card">
 						<div class="card__body">
-							<div class="calendar card__calendar">
+							<div class="calendar calendar_mini">
 								<div class="calendar__title">October 2021</div>
 								<div class="calendar__wrapper">
 									<div class="calendar__inner">
@@ -109,11 +171,13 @@
 						</div>
 						<div class="card__title">Calendar</div>
 					</a>
-					<a href="" class="card preview__card">
-						<div class="card__body"></div>
+					<a href="./05-lection3/02-modal/index.html" class="card">
+						<div class="card__body">
+							<img src="./assets/images/modalcard.jpg" alt="Modal">
+						</div>
 						<div class="card__title">Modal dialog</div>
 					</a>
-					<a href="./04-lection2/01-histogram/index.html" class="card preview__card">
+					<a href="./04-lection2/01-histogram/index.html" class="card">
 						<div class="card__body">
 							<section class="histogram">
 								<h1 class="histogram__header">Total orders</h1>
@@ -155,9 +219,9 @@
 						</div>
 						<div class="card__title">Histogram</div>
 					</a>
-					<a href="./06-lection4/01-avatar/index.html" class="card preview__card">
+					<a href="./06-lection4/01-avatar/index.html" class="card">
 						<div class="card__body">
-							<div class="avatar">
+							<div class="avatar avatar_preview">
 								<img class="avatar__img"
 									src="https://static10.tgstat.ru/channels/_0/91/915d3c10b8f7a4296436a932f79540a8.jpg"
 									alt="avatar">

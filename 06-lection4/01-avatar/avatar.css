@@ -13,3 +13,8 @@
 	width: 100%;
 	object-fit: cover;
 }
+
+.avatar_preview {
+	width: 160px;
+	height: 160px;
+}

@@ -3,20 +3,18 @@
 	flex-direction: column;
 	justify-content: center;
 	flex-basis: 350px;
-	height: 367px;
 	box-sizing: border-box;
 	background: var(--white);
 	box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
 	border-radius: 12px;
 	text-decoration: none;
+	padding: 30px 25px 30px 25px;
 }
 .card__body {
 	display: flex;
 	flex-grow: 1;
 	align-items: center;
 	justify-content: center;
-	flex-direction: column;
-	width: 100%;
 }
 .card__title {
 	font-family: "Roboto", sans-serif;
@@ -27,8 +25,13 @@
 	display: flex;
 	justify-content: center;
 	color: var(--black);
+	margin-top: 1.5rem;
 }
-.card__calendar {
-	transform: scale(0.75);
-	padding: 5px 25px 5px 25px !important;
+.card__body_forms {
+	pointer-events: none;
+	display: grid;
+	grid-template-columns: repeat(3, auto);
+	grid-template-rows: repeat(3, auto);
+	grid-auto-flow: column;
+	grid-gap: 1rem;
 }

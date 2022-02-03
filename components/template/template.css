@@ -5,7 +5,7 @@
 	grid-template-rows: auto 1fr auto;
 }
 .template__header {
-	background: #ffffff;
+	background: var(--white);
 	height: 82px;
 }
 .template__main {

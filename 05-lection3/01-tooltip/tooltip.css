@@ -44,3 +44,8 @@
 	text-align: center;
 	color: var(--grey-2);
 }
+
+.tooltip_preview .tooltip__bubble {
+	opacity: 1;
+	clip: auto;
+}
