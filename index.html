@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <!-- Main page -->
-<html lang="ru">
+<html lang="en">
 
 <head>
 	<link rel="stylesheet" href="./assets/css/normalize.css">
 	<link rel="stylesheet" href="./assets/css/main.css">
 	<link rel="stylesheet" href="./components/header/header.css">
 	<link rel="stylesheet" href="./components/footer/footer.css">
-	<link rel="stylesheet" href="./components/preview/preview.css">
 	<link rel="stylesheet" href="./components/page/page.css">
 	<link rel="stylesheet" href="./components/card/card.css">
 	<link rel="stylesheet" href="./04-lection2/01-histogram/histogram.css">
@@ -17,6 +16,10 @@
 	<link rel="stylesheet" href="./06-lection4/01-avatar/avatar.css">
 	<link rel="stylesheet" href="./07-lection5/01-checkbox/checkbox.css">
 	<link rel="stylesheet" href="./07-lection5/02-radio/radio.css">
+	<link rel="stylesheet" href="./components/tabs/tabs.css">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
@@ -30,34 +33,34 @@
 			<div class="container">
 				<h1 class="header__title">Reusable component library</h1>
 			</div>
-			<div class="preview  preview__tabs">
-				<input class="preview__input" type="radio" name="tabs" id="all-tab" checked>
-				<input class="preview__input" type="radio" name="tabs" id="element-tab">
-				<input class="preview__input" type="radio" name="tabs" id="containers-tab">
-				<input class="preview__input" type="radio" name="tabs" id="templates-tab">
-				<nav class="preview__tabs-nav">
+			<div class="tabs">
+				<input class="tabs__input" type="radio" name="tabs" id="all-tab" checked>
+				<input class="tabs__input" type="radio" name="tabs" id="element-tab">
+				<input class="tabs__input" type="radio" name="tabs" id="containers-tab">
+				<input class="tabs__input" type="radio" name="tabs" id="templates-tab">
+				<nav class="tabs__nav">
 					<div class="container">
-						<ul class="preview__tabs-menu">
-							<li class="preview__tabs-list">
-								<label for="all-tab" class="preview__tabs-label">All components</label>
+						<ul class="tabs__menu">
+							<li class="tabs__list">
+								<label for="all-tab" class="tabs__label">All components</label>
 							</li>
-							<li class="preview__tabs-list">
-								<label for="element-tab" class="preview__tabs-label">Elements</label>
+							<li class="tabs__list">
+								<label for="element-tab" class="tabs__label">Elements</label>
 							</li>
-							<li class="preview__tabs-list">
-								<label for="containers-tab" class="preview__tabs-label">Containers</label>
+							<li class="tabs__list">
+								<label for="containers-tab" class="tabs__label">Containers</label>
 							</li>
-							<li class="preview__tabs-list">
-								<label for="templates-tab" class="preview__tabs-label">Templates</label>
+							<li class="tabs__list">
+								<label for="templates-tab" class="tabs__label">Templates</label>
 							</li>
 						</ul>
 					</div>
 				</nav>
-				<div class="preview__tabs-divider"></div>
-				<section>
-					<div class="preview__tabs-content preview__tabs-content-1">
+				<div class="tabs__divider"></div>
+				<section class="tabs__section">
+					<div class="tabs__content tabs__content-1">
 						<div class="container">
-							<div class="preview__grid">
+							<div class="card__grid">
 								<a href="./05-lection3/01-tooltip/index.html" class="card">
 									<div class="card__body">
 										<div class="tooltip tooltip_preview">
@@ -261,9 +264,9 @@
 							</div>
 						</div>
 					</div>
-					<div class="preview__tabs-content preview__tabs-content-2"></div>
-					<div class="preview__tabs-content preview__tabs-content-3"></div>
-					<div class="preview__tabs-content preview__tabs-content-4"></div>
+					<div class="tabs__content tabs__content-2"></div>
+					<div class="tabs__content tabs__content-3"></div>
+					<div class="tabs__content tabs__content-4"></div>
 				</section>
 			</div>
 		</section>
