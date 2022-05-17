@@ -4,6 +4,7 @@
 
 <head>
 	<link rel="stylesheet" href="./assets/css/normalize.css">
+	<link rel="stylesheet" href="./assets/css/reset.css">
 	<link rel="stylesheet" href="./assets/css/main.css">
 	<link rel="stylesheet" href="./components/header/header.css">
 	<link rel="stylesheet" href="./components/footer/footer.css">
@@ -34,10 +35,10 @@
 				<h1 class="header__title">Reusable component library</h1>
 			</div>
 			<div class="tabs">
-				<input class="tabs__input" type="radio" name="tabs" id="all-tab" checked>
-				<input class="tabs__input" type="radio" name="tabs" id="element-tab">
-				<input class="tabs__input" type="radio" name="tabs" id="containers-tab">
-				<input class="tabs__input" type="radio" name="tabs" id="templates-tab">
+				<input class="tabs__input tabs__input_all" type="radio" name="tabs" id="all-tab" checked>
+				<input class="tabs__input tabs__input_element" type="radio" name="tabs" id="element-tab">
+				<input class="tabs__input tabs__input_containers" type="radio" name="tabs" id="containers-tab">
+				<input class="tabs__input tabs__input_templates" type="radio" name="tabs" id="templates-tab">
 				<nav class="tabs__nav">
 					<div class="container">
 						<ul class="tabs__menu">
@@ -59,7 +60,7 @@
 				<div class="tabs__divider"></div>
 				<section class="tabs__section">
 					<div class="tabs__content tabs__content-1">
-						<div class="container">
+						<div class="container card__preview">
 							<div class="card__grid">
 								<a href="./05-lection3/01-tooltip/index.html" class="card">
 									<div class="card__body">

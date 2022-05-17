@@ -15,7 +15,7 @@
 #element-tab:checked ~ .tabs__nav .tabs__label[for="element-tab"]:after,
 #containers-tab:checked ~ .tabs__nav .tabs__label[for="containers-tab"]:after,
 #templates-tab:checked ~ .tabs__nav .tabs__label[for="templates-tab"]:after,
-.tabs__nav ~ .tabs__label:hover:after {
+.tabs__nav .tabs__menu .tabs__label:hover:after {
 	transform: scaleX(1);
 }
 .tabs__menu > .tabs__list .tabs__label:hover,
@@ -60,11 +60,22 @@
 	margin: 0;
 	padding: 0;
 	list-style: none;
+	overflow-x: scroll;
 }
+.tabs__menu::-webkit-scrollbar {
+	display: none;
+}
+
 .tabs__list {
 	display: flex;
 	margin-right: 40px;
 }
+@media (max-width: 480px) {
+	.tabs__list {
+		margin-right: 30px;
+	}
+}
+
 .tabs__list:last-child {
 	margin-right: 0;
 }
@@ -94,4 +105,14 @@
 .tabs__content {
 	background-color: var(--pagebackground);
 	padding: 67px 0px 204px;
+}
+
+.tabs__input_all:checked ~ .tabs__section .card {
+	display: flex;
+}
+
+@media (max-width: 480px) {
+	.tabs__content {
+		padding: 22px 0px 61px;
+	}
 }
