@@ -1,53 +1,59 @@
-/* Reset */
+/*** box sizing border-box for all elements ***/
 *,
-*:before,
-*:after {
-	padding: 0;
-	margin: 0;
-	border: 0;
+*::before,
+*::after {
 	box-sizing: border-box;
 }
 
-:focus,
-:active {
-	outline: none;
-}
-a:focus,
-a:active {
-	outline: none;
-}
-nav,
-footer,
-header,
-aside {
-	display: block;
-}
-input,
-button,
-textarea {
-	font-family: inherit;
-}
-input::-ms-clear {
-	display: none;
-}
-button {
+a {
+	text-decoration: none;
+	color: inherit;
 	cursor: pointer;
 }
-a,
-a:visited {
-	text-decoration: none;
+
+button {
+	background-color: transparent;
+	color: inherit;
+	border-width: 0;
+	padding: 0;
+	cursor: pointer;
 }
-a:hover {
-	text-decoration: none;
+
+figure {
+	margin: 0;
 }
-summary::-webkit-details-marker {
-	display: none;
+
+input::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+	margin: 0;
 }
-body {
+
+ul,
+ol,
+dd {
 	margin: 0;
 	padding: 0;
-	height: 100vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	font-size: inherit;
+	font-weight: inherit;
+}
+
+p {
+	margin: 0;
+}
+
+fieldset {
+	border-width: 0;
+	padding: 0;
+	margin: 0;
 }

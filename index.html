@@ -1,30 +1,276 @@
 <!DOCTYPE html>
 <!-- Main page -->
-<html lang="ru">
+<html lang="en">
 
 <head>
 	<link rel="stylesheet" href="./assets/css/normalize.css">
+	<link rel="stylesheet" href="./assets/css/reset.css">
 	<link rel="stylesheet" href="./assets/css/main.css">
 	<link rel="stylesheet" href="./components/header/header.css">
 	<link rel="stylesheet" href="./components/footer/footer.css">
-	<link rel="stylesheet" href="./components/preview/preview.css">
 	<link rel="stylesheet" href="./components/page/page.css">
+	<link rel="stylesheet" href="./components/card/card.css">
+	<link rel="stylesheet" href="./04-lection2/01-histogram/histogram.css">
+	<link rel="stylesheet" href="./05-lection3/01-tooltip/tooltip.css">
+	<link rel="stylesheet" href="./05-lection3/02-modal/modal.css">
+	<link rel="stylesheet" href="./05-lection3/03-calendar/calendar.css">
+	<link rel="stylesheet" href="./06-lection4/01-avatar/avatar.css">
+	<link rel="stylesheet" href="./07-lection5/01-checkbox/checkbox.css">
+	<link rel="stylesheet" href="./07-lection5/02-radio/radio.css">
+	<link rel="stylesheet" href="./components/tabs/tabs.css">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
-	<div class="page">
+	<main class="main">
 		<header class="header">
+			<div class="container">
+				<div class="header__inner"></div>
+			</div>
+		</header>
+		<section class="page">
 			<div class="container">
 				<h1 class="header__title">Reusable component library</h1>
 			</div>
-		</header>
-		<main class="main">
-			<div class="preview">
-				<div class="container">
-
-				</div>
+			<div class="tabs">
+				<input class="tabs__input tabs__input_all" type="radio" name="tabs" id="all-tab" checked>
+				<input class="tabs__input tabs__input_element" type="radio" name="tabs" id="element-tab">
+				<input class="tabs__input tabs__input_containers" type="radio" name="tabs" id="containers-tab">
+				<input class="tabs__input tabs__input_templates" type="radio" name="tabs" id="templates-tab">
+				<nav class="tabs__nav">
+					<div class="container">
+						<ul class="tabs__menu">
+							<li class="tabs__list">
+								<label for="all-tab" class="tabs__label">All components</label>
+							</li>
+							<li class="tabs__list">
+								<label for="element-tab" class="tabs__label">Elements</label>
+							</li>
+							<li class="tabs__list">
+								<label for="containers-tab" class="tabs__label">Containers</label>
+							</li>
+							<li class="tabs__list">
+								<label for="templates-tab" class="tabs__label">Templates</label>
+							</li>
+						</ul>
+					</div>
+				</nav>
+				<div class="tabs__divider"></div>
+				<section class="tabs__section">
+					<div class="tabs__content tabs__content-1">
+						<div class="container card__preview">
+							<div class="card__grid">
+								<a href="./05-lection3/01-tooltip/index.html" class="card">
+									<div class="card__body">
+										<div class="tooltip tooltip_preview">
+											<div class="tooltip__icon">
+												<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path fill-rule="evenodd" clip-rule="evenodd"
+														d="M12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3ZM1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12C23 18.0751 18.0751 23 12 23C5.92487 23 1 18.0751 1 12Z"
+														fill="#212429" />
+													<path fill-rule="evenodd" clip-rule="evenodd"
+														d="M12.2581 8.02432C11.7926 7.94447 11.3138 8.03195 10.9066 8.27126C10.4994 8.51058 10.1901 8.88629 10.0333 9.33184C9.85006 9.85283 9.27914 10.1266 8.75815 9.94333C8.23716 9.76006 7.96339 9.18915 8.14666 8.66816C8.46013 7.77705 9.07886 7.02563 9.89327 6.547C10.7077 6.06837 11.6652 5.89341 12.5962 6.05311C13.5273 6.2128 14.3717 6.69686 14.9801 7.41953C15.5883 8.14205 15.9213 9.05648 15.92 10.0009C15.9195 11.5313 14.7849 12.5419 13.9747 13.082C13.5391 13.3725 13.1105 13.586 12.7949 13.7263C12.6356 13.7971 12.5015 13.8508 12.4049 13.8876C12.3565 13.906 12.3173 13.9203 12.2887 13.9305L12.254 13.9427L12.2429 13.9464L12.239 13.9478L12.2375 13.9483C12.2372 13.9484 12.2362 13.9487 11.92 13L12.2362 13.9487C11.7123 14.1233 11.146 13.8402 10.9713 13.3162C10.7968 12.7926 11.0794 12.2267 11.6027 12.0517L11.6014 12.0521C11.6015 12.0521 11.6016 12.052 11.6027 12.0517L11.6187 12.0461C11.6341 12.0406 11.6593 12.0314 11.6929 12.0186C11.7603 11.9929 11.8606 11.9529 11.9826 11.8987C12.2294 11.789 12.5509 11.6275 12.8653 11.4179C13.5549 10.9582 13.92 10.4691 13.92 10L13.92 9.99851C13.9207 9.52619 13.7542 9.06886 13.45 8.70753C13.1459 8.34619 12.7236 8.10417 12.2581 8.02432Z"
+														fill="#212429" />
+													<path fill-rule="evenodd" clip-rule="evenodd"
+														d="M12 15C12.5523 15 13 15.4477 13 16V16.5C13 17.0523 12.5523 17.5 12 17.5C11.4477 17.5 11 17.0523 11 16.5V16C11 15.4477 11.4477 15 12 15Z"
+														fill="#212429" />
+												</svg>
+											</div>
+											<div class="tooltip__bubble">
+												<div class="tooltip__text">Helper Text</div>
+											</div>
+										</div>
+									</div>
+									<div class="card__title">Tooltip</div>
+								</a>
+								<a href="./07-lection5/04-input/index.html" class="card">
+									<div class="card__body">
+										<div class="card__body_forms">
+											<label class="ckeckbox">
+												<input type="checkbox" class="ckeckbox__input">
+												<span class="ckeckbox__state">
+													<span class="ckeckbox__control">
+														<svg class="checkbox__icon" width="15" height="13" viewBox="0 0 15 13"
+															fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M1.5 7.5L5 11L13 2" stroke="white" stroke-width="3"
+																stroke-linecap="round" stroke-linejoin="round" />
+														</svg>
+													</span>
+													<span class="checkbox__label">Default</span>
+												</span>
+											</label>
+											<label class="ckeckbox">
+												<input type="checkbox" class="ckeckbox__input" checked>
+												<span class="ckeckbox__state">
+													<span class="ckeckbox__control">
+														<svg class="checkbox__icon" width="15" height="13" viewBox="0 0 15 13"
+															fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M1.5 7.5L5 11L13 2" stroke="white" stroke-width="3"
+																stroke-linecap="round" stroke-linejoin="round" />
+														</svg>
+													</span>
+													<span class="checkbox__label">Checked</span>
+												</span>
+											</label>
+											<label class="ckeckbox">
+												<input type="checkbox" class="ckeckbox__input" disabled>
+												<span class="ckeckbox__state">
+													<span class="ckeckbox__control">
+														<svg class="checkbox__icon" width="15" height="13" viewBox="0 0 15 13"
+															fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M1.5 7.5L5 11L13 2" stroke="white" stroke-width="3"
+																stroke-linecap="round" stroke-linejoin="round" />
+														</svg>
+													</span>
+													<span class="checkbox__label">Disabled</span>
+												</span>
+											</label>
+											<label class="radio">
+												<input type="radio" class="radio__input" value="1" name="nameradio">
+												<span class="radio__state">
+													<span class="radio__label">Default</span>
+												</span>
+											</label>
+											<label class="radio">
+												<input type="radio" class="radio__input" value="2" name="nameradio" checked>
+												<span class="radio__state">
+													<span class="radio__label">Selected</span>
+												</span>
+											</label>
+											<label class="radio">
+												<input type="radio" class="radio__input" value="3" name="nameradio" disabled>
+												<span class="radio__state">
+													<span class="radio__label">Disabled</span>
+												</span>
+											</label>
+										</div>
+									</div>
+									<div class="card__title">Custom form elements</div>
+								</a>
+								<a href="./05-lection3/03-calendar/index.html" class="card">
+									<div class="card__body">
+										<div class="calendar calendar_mini">
+											<div class="calendar__title">October 2021</div>
+											<div class="calendar__wrapper">
+												<div class="calendar__inner">
+													<span class="calendar__item calendar__item_day">Mon</span>
+													<span class="calendar__item calendar__item_day">Tue</span>
+													<span class="calendar__item calendar__item_day">Wed</span>
+													<span class="calendar__item calendar__item_day">Thu</span>
+													<span class="calendar__item calendar__item_day">Fri</span>
+													<span class="calendar__item calendar__item_day">Sat</span>
+													<span class="calendar__item calendar__item_day">Sun</span>
+													<span class="calendar__item"></span>
+													<span class="calendar__item"></span>
+													<span class="calendar__item"></span>
+													<span class="calendar__item"></span>
+													<span class="calendar__item">1</span>
+													<span class="calendar__item">2</span>
+													<span class="calendar__item">3</span>
+													<span class="calendar__item">4</span>
+													<span class="calendar__item">5</span>
+													<span class="calendar__item">6</span>
+													<span class="calendar__item">7</span>
+													<span class="calendar__item">8</span>
+													<span class="calendar__item">9</span>
+													<span class="calendar__item">10</span>
+													<span class="calendar__item">11</span>
+													<span class="calendar__item">12</span>
+													<span class="calendar__item">13</span>
+													<span class="calendar__item">14</span>
+													<span class="calendar__item">15</span>
+													<span class="calendar__item">16</span>
+													<span class="calendar__item">17</span>
+													<span class="calendar__item calendar__item_start">18</span>
+													<span class="calendar__item calendar__item_middle">19</span>
+													<span class="calendar__item calendar__item_middle">20</span>
+													<span class="calendar__item calendar__item_middle">21</span>
+													<span class="calendar__item calendar__item_middle">22</span>
+													<span class="calendar__item calendar__item_end">23</span>
+													<span class="calendar__item">24</span>
+													<span class="calendar__item">25</span>
+													<span class="calendar__item">26</span>
+													<span class="calendar__item">27</span>
+													<span class="calendar__item">28</span>
+													<span class="calendar__item">29</span>
+													<span class="calendar__item">30</span>
+													<span class="calendar__item">31</span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="card__title">Calendar</div>
+								</a>
+								<a href="./05-lection3/02-modal/index.html" class="card">
+									<div class="card__body">
+										<img src="./assets/images/modalcard.jpg" alt="Modal">
+									</div>
+									<div class="card__title">Modal dialog</div>
+								</a>
+								<a href="./04-lection2/01-histogram/index.html" class="card">
+									<div class="card__body">
+										<section class="histogram">
+											<h1 class="histogram__header">Total orders</h1>
+											<span href="#" class="histogram__link">View all</span>
+											<div class="histogram__orders">50399</div>
+											<div class="histogram__charts">
+												<div class="histogram__chart" style="height: 100%"></div>
+												<div class="histogram__chart" style="height: 60%"></div>
+												<div class="histogram__chart" style="height: 30%"></div>
+												<div class="histogram__chart" style="height: 70%"></div>
+												<div class="histogram__chart" style="height: 30%"></div>
+												<div class="histogram__chart" style="height: 50%"></div>
+												<div class="histogram__chart" style="height: 50%"></div>
+												<div class="histogram__chart" style="height: 100%"></div>
+												<div class="histogram__chart" style="height: 10%"></div>
+												<div class="histogram__chart" style="height: 30%"></div>
+												<div class="histogram__chart" style="height: 40%"></div>
+												<div class="histogram__chart" style="height: 50%"></div>
+												<div class="histogram__chart" style="height: 10%"></div>
+												<div class="histogram__chart" style="height: 100%"></div>
+												<div class="histogram__chart" style="height: 10%"></div>
+												<div class="histogram__chart" style="height: 80%"></div>
+												<div class="histogram__chart" style="height: 70%"></div>
+												<div class="histogram__chart" style="height: 60%"></div>
+												<div class="histogram__chart" style="height: 75%"></div>
+												<div class="histogram__chart" style="height: 60%"></div>
+												<div class="histogram__chart" style="height: 20%"></div>
+												<div class="histogram__chart" style="height: 90%"></div>
+												<div class="histogram__chart" style="height: 80%"></div>
+												<div class="histogram__chart" style="height: 100%"></div>
+												<div class="histogram__chart" style="height: 60%"></div>
+												<div class="histogram__chart" style="height: 10%"></div>
+												<div class="histogram__chart" style="height: 50%"></div>
+												<div class="histogram__chart" style="height: 10%"></div>
+												<div class="histogram__chart" style="height: 60%"></div>
+												<div class="histogram__chart" style="height: 30%"></div>
+											</div>
+										</section>
+									</div>
+									<div class="card__title">Histogram</div>
+								</a>
+								<a href="./06-lection4/01-avatar/index.html" class="card">
+									<div class="card__body">
+										<div class="avatar avatar_preview">
+											<img class="avatar__img"
+												src="https://static10.tgstat.ru/channels/_0/91/915d3c10b8f7a4296436a932f79540a8.jpg"
+												alt="avatar">
+										</div>
+									</div>
+									<div class="card__title">Avatar</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="tabs__content tabs__content-2"></div>
+					<div class="tabs__content tabs__content-3"></div>
+					<div class="tabs__content tabs__content-4"></div>
+				</section>
 			</div>
-		</main>
+		</section>
 		<footer class="footer">
 			<div class="container">
 				<div class="footer__title">About</div>
@@ -35,7 +281,7 @@
 					browsing the PNG previews in the categories you're most curious about.</div>
 			</div>
 		</footer>
-	</div>
+	</main>
 </body>
 
 </html>

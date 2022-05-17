@@ -30,6 +30,23 @@
 }
 
 .container {
+	width: 100%;
 	max-width: 1110px;
 	margin: 0 auto;
+	padding: 0 16px;
+}
+@media (min-width: 1200px) {
+	.container {
+		padding: 0;
+	}
+}
+.main {
+	display: flex;
+	flex-direction: column;
+	flex: 1 0 100%;
+}
+
+html,
+body {
+	height: 100%;
 }
